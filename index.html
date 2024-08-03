@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Food App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Order Food</h1>
+        <div class="menu">
+            <div class="menu-item">
+                <div class="quantity">0</div>
+                <img src="C:\Users\User\Desktop\telegram_test\image\burger.jfif" alt="Burger">
+                <span class="item-name">Burger</span>
+                <span class="item-price">$5.99</span>
+                <button onclick="addToOrder('Burger', 5.99)">Add to Order</button>
+            </div>
+            <div class="menu-item">
+                <div class="quantity">0</div>
+                <img src="C:\Users\User\Desktop\telegram_test\image\pizza.jfif" alt="Pizza">
+                <span class="item-name">Pizza</span>
+                <span class="item-price">$8.99</span>
+                <button onclick="addToOrder('Pizza', 8.99)">Add to Order</button>
+            </div>
+            <div class="menu-item">
+                <div class="quantity">0</div>
+                <img src="C:\Users\User\Desktop\telegram_test\image\fried.jfif" alt="Fries">
+                <span class="item-name">Fries</span>
+                <span class="item-price">$2.99</span>
+                <button onclick="addToOrder('Fries', 2.99)">Add to Order</button>
+            </div>
+        </div>
+        <h2>Your Order</h2>
+        <ul id="order-list"></ul>
+        <button onclick="placeOrder()">Place Order</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
